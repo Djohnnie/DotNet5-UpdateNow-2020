@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>_09_SourceGenerators.Demo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+  	<PackageReference Include="RestSharp" Version="106.11.7" />
+  	<PackageReference Include="System.Text.Json" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\09-SourceGenerators.Attributes\09-SourceGenerators.Attributes.csproj" />
+    <ProjectReference Include="..\09-SourceGenerators.Generator\09-SourceGenerators.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+</Project>

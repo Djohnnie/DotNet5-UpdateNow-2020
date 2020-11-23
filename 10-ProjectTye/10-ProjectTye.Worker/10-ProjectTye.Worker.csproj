@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-_10_ProjectTye.Worker-93973FAB-8F8A-4967-82C3-DA524C54C0F8</UserSecretsId>
+    <RootNamespace>_10_ProjectTye.Worker</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+	<PackageReference Include="Microsoft.Tye.Extensions.Configuration" Version="0.4.0-alpha.20371.1" />
+	<PackageReference Include="RestSharp" Version="106.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\10-ProjectTye.Dto\10-ProjectTye.Dto.csproj" />
+  </ItemGroup>
+</Project>

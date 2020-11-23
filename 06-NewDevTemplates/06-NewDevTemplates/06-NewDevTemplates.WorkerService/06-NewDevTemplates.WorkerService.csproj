@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-_06_NewDevTemplates.WorkerService-F6C7E26B-0A0D-499D-9D50-AE072D5F1AF7</UserSecretsId>
+    <RootNamespace>_06_NewDevTemplates.WorkerService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0-rc.2.20475.5" />
+  </ItemGroup>
+</Project>

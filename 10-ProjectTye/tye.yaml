@@ -1,0 +1,14 @@
+name: projecttye
+services:
+- name: projecttye-backend
+  project: 10-ProjectTye.Backend/10-ProjectTye.Backend.csproj
+- name: projecttye-worker
+  project: 10-ProjectTye.Worker/10-ProjectTye.Worker.csproj
+- name: redis
+  image: redis
+  bindings:
+  - port: 6379
+    connectionString: "${host}:${port}"
+- name: redis-cli
+  image: redis
+  args: "redis-cli -h redis MONITOR"

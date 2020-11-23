@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "_06_NewDevTemplates.GrpcService";
+
+package contract;
+
+// The greeting service definition.
+service Sauna {
+  // Sends a greeting
+  rpc FetchCurrentState (SaunaRequest) returns (SaunaResponse);
+  rpc FetchStateStream (SaunaRequest) returns (stream SaunaResponse);
+}
+
+// The request message containing the user's name.
+message SaunaRequest {
+  string temperatureUnit = 1;
+}
+
+// The response message containing the greetings.
+message SaunaResponse {
+  int64 timeStamp = 1;
+  bool isDrySauna = 2;
+  bool isInfraRed = 3;
+  int32 temperature = 4;
+  string description = 5;
+}
